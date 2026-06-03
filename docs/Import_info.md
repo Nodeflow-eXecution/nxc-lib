@@ -10,7 +10,7 @@ nxc-lib is header-only where possible.
 Clone the repository and add the `include/` folder to your project's include path.
 
 ```sh
-git clone https://github.com/nxsoftware/nxc-lib
+git clone https://github.com/Nodeflow-eXecution/nxc-lib
 ```
 
 Then include headers as needed:
@@ -38,7 +38,8 @@ This header provides:
 - Character and string view types (nxc_char, nxc_wchar, nxc_str, nxc_str_mut)
 
 No source file is required. nxc_types.h is header-only.
-(Unfinished) See: [nxc_types.md](technical_documentations/nxc_types.md) for detailed technical documentation.
+
+(WIP) See: [nxc_types.md](technical_documentations/nxc_types.md) for detailed technical documentation.
 
 ---
 
