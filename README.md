@@ -1,4 +1,4 @@
-# nxc-lib — nodeflow-execution c-library
+# nxc-lib — Nodeflow-eXecution c-library
 
 nxc-lib is a lightweight utility and foundation library for C, built around explicit data control, predictable behavior, and clear ownership semantics.
 

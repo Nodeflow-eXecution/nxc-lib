@@ -3,7 +3,7 @@
     
     This header defines all base types used across nxc-lib.
     Include this header directly or via 'nxc.h'.
-    (WIP) See: "Import_info.md" inside the github repository.  */
+    See: "Import_Guide.md" inside the github repository.  */
 
 #ifndef NXC_TYPES_H
 #define NXC_TYPES_H
