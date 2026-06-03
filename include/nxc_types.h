@@ -62,23 +62,31 @@ _Static_assert(sizeof(nxc_f64) == 8, "nxc_f64 must be 8 bytes");
    platform-aware by design. They wrap standard C types
    that adapt to the target platform intentionally. */
 
+// unsigned type for object sizes and array indices, platform-dependent width
 typedef size_t nxc_size;
 
+// bool datatype
 typedef bool nxc_bool;
 
+// byte data-type
 typedef uint8_t nxc_byte;
 
+// unsigned integer type capable of storing a data pointer, similar to void*
 typedef uintptr_t nxc_uptr;
 
+// signed counterpart to nxc_uptr
 typedef intptr_t nxc_iptr;
 
+// pointer difference for pointer arithmetic to elements of the same array
 typedef ptrdiff_t nxc_ptrdiff;
 
+// span of data for handing eg. array to functions
 typedef struct {
     nxc_byte* data;
     nxc_size len;
 } nxc_span;
 
+// read only counterpart to nxc_span
 typedef struct {
     const nxc_byte* data;
     nxc_size len;
@@ -88,7 +96,6 @@ typedef struct {
    begin is inclusive, end is exclusive.
    The number of elements in the range is always (end - begin).
    Example: begin=2, end=5 covers indices 2, 3, 4. */
-
 typedef struct {
     nxc_size begin;
     nxc_size end;
